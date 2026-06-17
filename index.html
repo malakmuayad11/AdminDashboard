@@ -3,8 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Document</title>
   </head>
-  <body></body>
+
+  <body>
+    <div>
+      <!-- Sidebar -->
+      <aside>
+        <div>
+          <h1>AdminPro</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Top Bar -->
+        <header>
+          <div>
+            <input type="text" placeholder="Search anything..." />
+          </div>
+
+          <div>
+            <button>🔔</button>
+
+            <div>
+              <img src="https://i.pravatar.cc/40" alt="User Avatar" />
+              <span>John Doe</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Dashboard Heading -->
+        <section>
+          <h2>Dashboard</h2>
+          <p>Welcome back, John!</p>
+        </section>
+
+        <!-- Stats Cards -->
+        <section>
+          <article>
+            <h3>Total Users</h3>
+            <p>12,540</p>
+            <span>+12.5%</span>
+          </article>
+
+          <article>
+            <h3>Revenue</h3>
+            <p>$45,231</p>
+            <span>+8.2%</span>
+          </article>
+
+          <article>
+            <h3>Orders</h3>
+            <p>2,350</p>
+            <span>+15.3%</span>
+          </article>
+
+          <article>
+            <h3>Growth Rate</h3>
+            <p>23.5%</p>
+            <span>+4.3%</span>
+          </article>
+        </section>
+
+        <!-- Charts Section -->
+        <section>
+          <article>
+            <h3>Revenue Overview</h3>
+
+            <div>
+              <!-- Chart Placeholder -->
+            </div>
+          </article>
+
+          <article>
+            <h3>User Activity</h3>
+
+            <div>
+              <!-- Chart Placeholder -->
+            </div>
+          </article>
+        </section>
+
+        <!-- Users Table -->
+        <section>
+          <div>
+            <h3>Recent Users</h3>
+
+            <button>Add User</button>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Joined Date</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Sarah Johnson</td>
+                <td>sarah@example.com</td>
+                <td>Active</td>
+                <td>May 18, 2024</td>
+                <td>
+                  <button>View</button>
+                  <button>Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Michael Smith</td>
+                <td>michael@example.com</td>
+                <td>Pending</td>
+                <td>May 17, 2024</td>
+                <td>
+                  <button>View</button>
+                  <button>Edit</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Emily Davis</td>
+                <td>emily@example.com</td>
+                <td>Active</td>
+                <td>May 16, 2024</td>
+                <td>
+                  <button>View</button>
+                  <button>Edit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
