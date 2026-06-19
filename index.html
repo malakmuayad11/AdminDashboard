@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body class="bg-slate-900 text-amber-50 box-content mr-4">
-    <div class="grid grid-cols-[15%_1fr] gap-4">
+  <body
+    class="bg-slate-900 text-amber-50 box-content md:ml-0 md:mr-4 mr-4 ml-4"
+  >
+    <div class="md:grid md:grid-cols-[15%_1fr] md:gap-4">
       <!-- Sidebar -->
-      <aside class="border-r border-gray-500 h-full">
+      <aside class="border-r border-gray-500 h-full hidden md:block">
         <div class="mb-6">
           <h1 class="text-amber-50 p-4 flex gap-1 justify-start">
             <img src="icons/logo.svg" alt="Logo icon" class="w-5 h-5" />
@@ -266,7 +268,7 @@
 
         <!-- Users Table -->
         <section
-          class="flex flex-col gap-2 bg-blue-800/30 rounded-xl border border-gray-500 p-2 mb-4"
+          class="overflow-x-auto flex flex-col gap-2 bg-blue-800/30 rounded-xl border border-gray-500 p-2 mb-4"
         >
           <div class="flex justify-between">
             <h3 class="font-semibold">Recent Users</h3>
