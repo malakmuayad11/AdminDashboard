@@ -7,145 +7,374 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body>
-    <div>
+  <body class="bg-slate-900 text-amber-50 box-content mr-4">
+    <div class="grid grid-cols-[15%_1fr] gap-4">
       <!-- Sidebar -->
-      <aside>
-        <div>
-          <h1>AdminPro</h1>
+      <aside class="border-r border-gray-500 h-full">
+        <div class="mb-6">
+          <h1 class="text-amber-50 p-4 flex gap-1 justify-start">
+            <img src="icons/logo.svg" alt="Logo icon" class="w-5 h-5" />
+            Admin<span class="text-purple-500">Pro</span>
+          </h1>
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Settings</a></li>
+        <nav class="m-2">
+          <ul class="flex flex-col gap-2">
+            <li
+              class="text-gray-300 py-4 bg-blue-800/30 rounded-md hover:cursor-pointer"
+            >
+              <a href="#" class="flex items-center justify-center gap-1"
+                ><img
+                  src="icons/dashboard.svg"
+                  alt="Dashboard icon"
+                  class="w-6.25 h-6.25"
+                />
+                Dashboard</a
+              >
+            </li>
+            <li
+              class="text-gray-300 p-4 hover:bg-blue-800/40 hover:rounded-md hover:cursor-pointer"
+            >
+              <a href="#" class="flex justify-start gap-1">
+                <img src="icons/user.svg" alt="User icon" class="w-5 h-5" />
+                Users</a
+              >
+            </li>
+            <li
+              class="text-gray-300 p-4 hover:bg-blue-800/40 hover:rounded-md hover:cursor-pointer"
+            >
+              <a href="#" class="flex justify-start gap-1">
+                <img
+                  src="icons/order.svg"
+                  alt="Order icon"
+                  class="w-4.5 h-4.5"
+                />Orders</a
+              >
+            </li>
+            <li
+              class="text-gray-300 p-4 hover:bg-blue-800/40 hover:rounded-md hover:cursor-pointer"
+            >
+              <a href="#" class="flex justify-start gap-1"
+                ><img
+                  src="icons/analytics.svg"
+                  alt="Analytics icon"
+                  class="w-5 h-5"
+                />
+                Analytics</a
+              >
+            </li>
+            <li
+              class="text-gray-300 p-4 hover:bg-blue-800/40 hover:rounded-md hover:cursor-pointer"
+            >
+              <a href="#" class="flex justify-start gap-1"
+                ><img
+                  src="icons/settings.svg"
+                  alt="Settings icon"
+                  class="w-5 h-5"
+                />
+                Settings</a
+              >
+            </li>
           </ul>
         </nav>
       </aside>
 
       <!-- Main Content -->
-      <main>
+      <main class="mt-2">
         <!-- Top Bar -->
-        <header>
+        <header
+          class="flex gap-2 justify-between mt-0.5 border-b border-gray-500 p-1"
+        >
           <div>
-            <input type="text" placeholder="Search anything..." />
+            <input
+              type="search"
+              placeholder="Search anything..."
+              class="bg-blue-800/30 p-1.5 rounded-md appearance-none outline-none border border-transparent focus:outline-none focus:ring-0"
+            />
           </div>
 
-          <div>
-            <button>🔔</button>
+          <div class="flex gap-4">
+            <!-- there is an error in the after button's content -->
+            <button
+              class="after:content-['_|'] after:text-gray-300 mt-2 cursor-pointer"
+            >
+              🔔
+            </button>
 
-            <div>
-              <img src="https://i.pravatar.cc/40" alt="User Avatar" />
-              <span>John Doe</span>
+            <div class="flex gap-2 mt-2">
+              <img
+                src="https://i.pravatar.cc/40"
+                alt="User Avatar"
+                class="object-cover rounded-full w-8 h-8"
+              />
+              <span class="text-center mt-1.5">John Doe</span>
             </div>
           </div>
         </header>
 
         <!-- Dashboard Heading -->
-        <section>
-          <h2>Dashboard</h2>
-          <p>Welcome back, John!</p>
+        <section class="m-2 mt-4">
+          <h2 class="font-bold text-2xl">Dashboard</h2>
+          <p class="text-gray-300">Welcome back, John!</p>
         </section>
 
         <!-- Stats Cards -->
-        <section>
-          <article>
-            <h3>Total Users</h3>
-            <p>12,540</p>
-            <span>+12.5%</span>
+        <section
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 mt-6 mb-6"
+        >
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center"
+          >
+            <img
+              src="icons/users.svg"
+              alt="Users icons"
+              class="w-6.25 h-6.25"
+            />
+            <h3 class="text-gray-300">Total Users</h3>
+            <p class="text-xl font-bold">12,540</p>
+            <span class="text-green-500">+12.5%</span>
           </article>
 
-          <article>
-            <h3>Revenue</h3>
-            <p>$45,231</p>
-            <span>+8.2%</span>
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center"
+          >
+            <img
+              src="icons/dollar-sign.svg"
+              alt="Dollar sign icon"
+              class="w-6.25 h-6.25"
+            />
+            <h3 class="text-gray-300">Revenue</h3>
+            <p class="text-xl font-bold">$45,231</p>
+            <span class="text-green-500">+8.2%</span>
           </article>
 
-          <article>
-            <h3>Orders</h3>
-            <p>2,350</p>
-            <span>+15.3%</span>
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center"
+          >
+            <img
+              src="icons/shopping-bag.svg"
+              alt="Shopping bag icon"
+              class="w-6.25 h-6.25"
+            />
+            <h3 class="text-gray-300">Orders</h3>
+            <p class="text-xl font-bold">2,350</p>
+            <span class="text-green-500">+15.3%</span>
           </article>
 
-          <article>
-            <h3>Growth Rate</h3>
-            <p>23.5%</p>
-            <span>+4.3%</span>
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center"
+          >
+            <img
+              src="icons/growth-rate.svg"
+              alt="Growth rate icon"
+              class="w-6.25 h-6.25"
+            />
+            <h3 class="text-gray-300">Growth Rate</h3>
+            <p class="text-xl font-bold">23.5%</p>
+            <span class="text-green-500">+4.3%</span>
           </article>
         </section>
 
         <!-- Charts Section -->
-        <section>
-          <article>
-            <h3>Revenue Overview</h3>
+        <section class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center mb-4"
+          >
+            <h3 class="font-semibold">Revenue Overview</h3>
 
-            <div>
-              <!-- Chart Placeholder -->
+            <div class="w-full h-64 mt-4 relative">
+              <svg
+                class="w-full h-52"
+                viewBox="0 0 600 200"
+                fill="none"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 160 C70 120, 100 50, 170 90 S290 170, 340 110 S450 30, 600 70"
+                  stroke="#818cf8"
+                  stroke-width="4"
+                  fill="none"
+                />
+
+                <path
+                  d="M0 160 C70 120, 100 50, 170 90 S290 170, 340 110 S450 30, 600 70 L600 200 L0 200 Z"
+                  fill="rgba(129,140,248,0.15)"
+                />
+              </svg>
+
+              <div class="flex justify-between mt-3 text-xs text-gray-400">
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fri</span>
+                <span>Sat</span>
+                <span>Sun</span>
+              </div>
             </div>
           </article>
 
-          <article>
-            <h3>User Activity</h3>
+          <article
+            class="flex flex-col gap-2 bg-blue-800/30 p-2 rounded-xl border border-gray-500 items-center justify-center mb-4"
+          >
+            <h3 class="font-semibold">User Activity</h3>
 
-            <div>
-              <!-- Chart Placeholder -->
+            <div class="w-full h-64 mt-4">
+              <div class="flex items-end justify-between h-52 gap-2">
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 25%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 40%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 30%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 70%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 50%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 80%"
+                ></div>
+                <div
+                  class="w-full bg-indigo-500/40 rounded-t-md"
+                  style="height: 95%"
+                ></div>
+              </div>
+
+              <div class="flex justify-between mt-3 text-xs text-gray-400">
+                <span class="flex-1 text-center">Mon</span>
+                <span class="flex-1 text-center">Tue</span>
+                <span class="flex-1 text-center">Wed</span>
+                <span class="flex-1 text-center">Thu</span>
+                <span class="flex-1 text-center">Fri</span>
+                <span class="flex-1 text-center">Sat</span>
+                <span class="flex-1 text-center">Sun</span>
+              </div>
             </div>
           </article>
         </section>
 
         <!-- Users Table -->
-        <section>
-          <div>
-            <h3>Recent Users</h3>
+        <section
+          class="flex flex-col gap-2 bg-blue-800/30 rounded-xl border border-gray-500 p-2 mb-4"
+        >
+          <div class="flex justify-between">
+            <h3 class="font-semibold">Recent Users</h3>
 
-            <button>Add User</button>
+            <button class="bg-purple-500 p-1 rounded-sm text-xs cursor-pointer">
+              Add User
+            </button>
           </div>
 
-          <table>
-            <thead>
+          <table class="text-left text-sm w-full">
+            <thead class="border-b-[0.5px] border-gray-500 p-2">
               <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Status</th>
-                <th>Joined Date</th>
-                <th>Actions</th>
+                <th class="font-semibold py-3 px-4">Name</th>
+                <th class="font-semibold py-3 px-4">Email</th>
+                <th class="font-semibold py-3 px-4">Status</th>
+                <th class="font-semibold py-3 px-4">Joined Date</th>
+                <th class="font-semibold py-3 px-4">Actions</th>
               </tr>
             </thead>
 
-            <tbody>
-              <tr>
-                <td>Sarah Johnson</td>
-                <td>sarah@example.com</td>
-                <td>Active</td>
-                <td>May 18, 2024</td>
-                <td>
-                  <button>View</button>
-                  <button>Edit</button>
+            <tbody class="text-gray-300 divide-y divide-gray-600">
+              <tr class="border-b-[0.5px] border-gray-500">
+                <td class="text-white flex gap-1 py-3 px-4">
+                  <img
+                    src="https://i.pravatar.cc/40"
+                    alt="User Avatar"
+                    class="object-cover rounded-full w-6 h-6"
+                  />Sarah Johnson
+                </td>
+                <td class="py-3 px-4">sarah@example.com</td>
+                <td class="py-3 px-4">
+                  <span
+                    class="p-1 bg-green-500/20 border-green-500 border rounded-md text-xs text-green-500"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-4">May 18, 2024</td>
+                <td class="py-3 px-4 flex gap-3">
+                  <button class="hover:cursor-pointer">
+                    <img src="icons/view.svg" alt="View icon" class="w-5 h-5" />
+                  </button>
+                  <button class="hover:cursor-pointer">
+                    <img
+                      src="icons/edit.svg"
+                      alt="Edit icon"
+                      class="w-5 h-5 relative -top-0.5"
+                    />
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="border-b-[0.5px] border-gray-500">
+                <td class="text-white flex gap-1 py-3 px-4">
+                  <img
+                    src="https://i.pravatar.cc/40"
+                    alt="User Avatar"
+                    class="object-cover rounded-full w-6 h-6"
+                  />Michael Smith
+                </td>
+                <td class="py-3 px-4">michael@example.com</td>
+                <td class="py-3 px-4">
+                  <span
+                    class="p-1 bg-yellow-500/20 border-yellow-500 border rounded-md text-xs text-yellow-500"
+                    >Pending</span
+                  >
+                </td>
+                <td class="py-3 px-4">May 17, 2024</td>
+                <td class="py-3 px-4 flex gap-3">
+                  <button class="hover:cursor-pointer">
+                    <img src="icons/view.svg" alt="View icon" class="w-5 h-5" />
+                  </button>
+                  <button class="hover:cursor-pointer">
+                    <img
+                      src="icons/edit.svg"
+                      alt="Edit icon"
+                      class="w-5 h-5 relative -top-0.5"
+                    />
+                  </button>
                 </td>
               </tr>
 
               <tr>
-                <td>Michael Smith</td>
-                <td>michael@example.com</td>
-                <td>Pending</td>
-                <td>May 17, 2024</td>
-                <td>
-                  <button>View</button>
-                  <button>Edit</button>
+                <td class="text-white flex gap-1 py-3 px-4">
+                  <img
+                    src="https://i.pravatar.cc/40"
+                    alt="User Avatar"
+                    class="object-cover rounded-full w-6 h-6"
+                  />Emily Davis
                 </td>
-              </tr>
-
-              <tr>
-                <td>Emily Davis</td>
-                <td>emily@example.com</td>
-                <td>Active</td>
-                <td>May 16, 2024</td>
-                <td>
-                  <button>View</button>
-                  <button>Edit</button>
+                <td class="py-3 px-4">emily@example.com</td>
+                <td class="py-3 px-4">
+                  <span
+                    class="p-1 bg-green-500/20 border-green-500 border rounded-md text-xs text-green-500"
+                    >Active</span
+                  >
+                </td>
+                <td class="py-3 px-4">May 16, 2024</td>
+                <td class="py-3 px-4 flex gap-3">
+                  <button class="hover:cursor-pointer">
+                    <img src="icons/view.svg" alt="View icon" class="w-5 h-5" />
+                  </button>
+                  <button class="hover:cursor-pointer">
+                    <img
+                      src="icons/edit.svg"
+                      alt="Edit icon"
+                      class="w-5 h-5 relative -top-0.5"
+                    />
+                  </button>
                 </td>
               </tr>
             </tbody>
