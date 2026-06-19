@@ -88,6 +88,7 @@
           class="flex gap-2 justify-between mt-0.5 border-b border-gray-500 p-1"
         >
           <div>
+            <button id="btnCollapse">collapse</button>
             <input
               type="search"
               placeholder="Search anything..."
@@ -273,7 +274,9 @@
           <div class="flex justify-between">
             <h3 class="font-semibold">Recent Users</h3>
 
-            <button class="bg-purple-500 p-1 rounded-sm text-xs cursor-pointer">
+            <button
+              class="bg-purple-500 p-1 rounded-sm text-xs cursor-pointer hover:bg-purple-600"
+            >
               Add User
             </button>
           </div>
@@ -289,7 +292,7 @@
               </tr>
             </thead>
 
-            <tbody class="text-gray-300 divide-y divide-gray-600">
+            <tbody class="text-gray-300 divide-gray-600">
               <tr class="border-b-[0.5px] border-gray-500 hover:bg-blue-800/40">
                 <td class="text-white flex gap-1 py-3 px-4">
                   <img
