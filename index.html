@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <script src="dist/script.js" type="module" defer></script>
   </head>
 
-  <body
-    class="bg-slate-900 text-amber-50 box-content md:ml-0 md:mr-4 mr-4 ml-4"
-  >
-    <div class="md:grid md:grid-cols-[15%_1fr] md:gap-4">
+  <body class="bg-slate-900 text-amber-50 box-content md:ml-0 mr-4 ml-4">
+    <div id="pageLayout" class="md:grid md:grid-cols-[15%_1fr] md:gap-4">
       <!-- Sidebar -->
-      <aside class="border-r border-gray-500 h-full hidden md:block">
+      <aside
+        id="sideMenu"
+        class="md:border-r border-gray-500 h-full hidden md:block border-b"
+      >
         <div class="mb-6">
           <h1 class="text-amber-50 p-4 flex gap-1 justify-start">
             <img src="icons/logo.svg" alt="Logo icon" class="w-5 h-5" />
@@ -25,7 +27,9 @@
             <li
               class="text-gray-300 py-4 bg-blue-800/30 rounded-md hover:cursor-pointer"
             >
-              <a href="#" class="flex items-center justify-center gap-1"
+              <a
+                href="#"
+                class="flex items-center justify-start md:justify-center gap-1"
                 ><img
                   src="icons/dashboard.svg"
                   alt="Dashboard icon"
@@ -87,8 +91,18 @@
         <header
           class="flex gap-2 justify-between mt-0.5 border-b border-gray-500 p-1"
         >
-          <div>
-            <button id="btnCollapse">collapse</button>
+          <div class="flex justify-evenly shrink-0 gap-0.5">
+            <button
+              id="btnCollapse"
+              data-collapse="false"
+              class="cursor-pointer"
+            >
+              <img
+                src="icons/collapse.svg"
+                alt="Collapse icon"
+                class="h-5 w-5 pr-1"
+              />
+            </button>
             <input
               type="search"
               placeholder="Search anything..."
@@ -96,21 +110,20 @@
             />
           </div>
 
-          <div class="flex gap-4">
-            <!-- there is an error in the after button's content -->
+          <div class="flex items-center gap-4">
             <button
-              class="after:content-['_|'] after:text-gray-300 mt-2 cursor-pointer"
+              class="md:after:content-['_|'] md:after:text-gray-300 cursor-pointer"
             >
               🔔
             </button>
 
-            <div class="flex gap-2 mt-2">
+            <div class="flex items-center gap-1 md:gap-2">
               <img
                 src="https://i.pravatar.cc/40"
                 alt="User Avatar"
                 class="object-cover rounded-full w-8 h-8"
               />
-              <span class="text-center mt-1.5">John Doe</span>
+              <span class="text-center">John Doe</span>
             </div>
           </div>
         </header>
