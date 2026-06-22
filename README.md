@@ -51,7 +51,11 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
 - TypeScript compiles from src/script.ts → dist/script.js
 - Tailwind compiles from src/input.css → dist/output.css
 
+### 🔗 Live Demo
+[Admin Dashboard](https://malakmuayad11.github.io/AdminDashboard/)
+
 ### 📸 UI Overview
+![Demo](./src/ui-overview.gif)
 
 ## 👩‍💻 Author
 
