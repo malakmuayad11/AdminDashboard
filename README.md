@@ -31,10 +31,19 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
    git clone https://github.com/your-username/AdminDashboard.git
    cd AdminDashboard
    ```
-2. Install dependencies: npm install
-3. Build TypeScript: npx tsc
-4. Build Tailwind CSS (If you're using Tailwind CLI): npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-5. Open the project: open index.html in your browser.
+2. Install dependencies:
+   ```bash
+    npm install
+    ```
+4. Build TypeScript:
+  ```bash
+    npx tsc
+   ```
+6. Build Tailwind CSS (If you're using Tailwind CLI):
+  ```bash
+     npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+  ```
+8. Open the project: open index.html in your browser.
 
 ### ⚙️ Notes
 
