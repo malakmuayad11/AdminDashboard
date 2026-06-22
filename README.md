@@ -24,25 +24,6 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
 - SVG (for charts)
 - Google Fonts (Inter)
 
-## 📁 Project Structure
-```bash
-AdminDashboard/
-│
-├── src/
-│ ├── input.css # Tailwind source CSS
-│ ├── script.ts # TypeScript logic
-│ └── images/ # Icons and assets
-│
-├── dist/
-│ ├── output.css # Compiled Tailwind CSS
-│ ├── script.js # Compiled JS
-│
-├── index.html
-├── package.json
-├── tsconfig.json
-└── README.md
-```
-
 ## 🚀 How to Run Locally
 
 1. Clone the repository
