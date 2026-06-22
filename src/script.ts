@@ -46,16 +46,14 @@ function expandSideMenu(): void {
   UI.overlay.classList.remove("hidden");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  UI.btnCollapse.addEventListener("click", () => {
-    const isCollapsed = UI.btnCollapse.dataset.collapse === "true";
+function toggleSideMenuByDefault(): void {
+  const isCollapsed: boolean = UI.btnCollapse.dataset.collapse === "true";
 
-    if (isCollapsed) {
-      expandSideMenu();
-    } else {
-      collapseSideMenu();
-    }
-  });
+  isCollapsed ? expandSideMenu() : collapseSideMenu();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  UI.btnCollapse.addEventListener("click", toggleSideMenuByDefault);
 });
 
 UI.overlay.addEventListener("click", collapseSideMenu);
