@@ -18,14 +18,25 @@
       sizes="192x192"
       href="images/android-touch-icon.png"
     />
-
     <!-- SVG Favicon: scalable for various display devices -->
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Using the Inter font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" href="./dist/output.css" />
     <script src="dist/script.js" type="module" defer></script>
   </head>
 
-  <body class="bg-slate-900 text-amber-50 box-content md:ml-0 mr-4 ml-4">
+  <body
+    class="bg-slate-900 text-amber-50 box-content md:ml-0 mr-4 ml-4 font-sans"
+  >
     <div
       id="pageLayout"
       class="md:grid md:grid-cols-[240px_1fr] transition-all duration-300 ease-in-out"

@@ -1,19 +1,4 @@
 @import "tailwindcss";
-/* --- Custom Sidebar Toggle Logic --- */
-
-/* Mobile: When the button is collapsed (clicked on mobile), force show the menu */
-/* #pageLayout:has(#btnCollapse[data-collapse="true"]) #sideMenu {
-  display: block !important;
+@theme {
+  --font-sans: "Inter", sans-serif;
 }
-
-@media (min-width: 768px) {
-  #pageLayout:has(#btnCollapse[data-collapse="true"]) {
-    grid-template-columns: 1fr !important;
-  }
-  body:has(#btnCollapse[data-collapse="true"]) {
-    margin-left: 1rem;
-  }
-  #pageLayout:has(#btnCollapse[data-collapse="true"]) #sideMenu {
-    display: none !important;
-  }
-} */
