@@ -2,21 +2,18 @@
 /* --- Custom Sidebar Toggle Logic --- */
 
 /* Mobile: When the button is collapsed (clicked on mobile), force show the menu */
-#pageLayout:has(#btnCollapse[data-collapse="true"]) #sideMenu {
+/* #pageLayout:has(#btnCollapse[data-collapse="true"]) #sideMenu {
   display: block !important;
 }
 
-/* Desktop: Screen sizes 768px and up */
 @media (min-width: 768px) {
-  /* Flatten the layout to a single column */
   #pageLayout:has(#btnCollapse[data-collapse="true"]) {
     grid-template-columns: 1fr !important;
   }
   body:has(#btnCollapse[data-collapse="true"]) {
     margin-left: 1rem;
   }
-  /* Hide the sidebar out of view on desktop when collapsed */
   #pageLayout:has(#btnCollapse[data-collapse="true"]) #sideMenu {
     display: none !important;
   }
-}
+} */
