@@ -46,15 +46,16 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
 8. Open the project: open index.html in your browser.
 
 ### ⚙️ Notes
-
 - dist/ is auto-generated (do not edit manually)
 - TypeScript compiles from src/script.ts → dist/script.js
 - Tailwind compiles from src/input.css → dist/output.css
 
 ### 🔗 Live Demo
+
 [Admin Dashboard](https://malakmuayad11.github.io/AdminDashboard/)
 
 ### 📸 UI Overview
+
 ![Demo](./src/assets/ui-overview.gif)
 
 ## 👩‍💻 Author
