@@ -55,7 +55,7 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
 [Admin Dashboard](https://malakmuayad11.github.io/AdminDashboard/)
 
 ### 📸 UI Overview
-![Demo](./src/ui-overview.gif)
+![Demo](./src/assets/ui-overview.gif)
 
 ## 👩‍💻 Author
 
