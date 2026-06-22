@@ -36,13 +36,13 @@ It includes a collapsible sidebar, analytics cards, charts, and a user managemen
     npm install
     ```
 4. Build TypeScript:
-  ```bash
+   ```bash
     npx tsc
    ```
 6. Build Tailwind CSS (If you're using Tailwind CLI):
-  ```bash
+   ```bash
      npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-  ```
+   ```
 8. Open the project: open index.html in your browser.
 
 ### ⚙️ Notes
