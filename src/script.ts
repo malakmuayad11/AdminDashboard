@@ -57,3 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+UI.overlay.addEventListener("click", collapseSideMenu);

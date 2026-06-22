@@ -44,5 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+UI.overlay.addEventListener("click", collapseSideMenu);
 export {};
 //# sourceMappingURL=script.js.map
